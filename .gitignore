@@ -1,0 +1,31 @@
+# Ignorar archivos compilados de Python
+.env
+_.pyc
+_.pyo
+\*.pyd
+**pycache**/
+
+# Ignorar entornos virtuales
+
+venv/
+env/
+ENV/
+\*.env
+
+# Archivos de configuración de IDEs
+
+.vscode/
+.idea/
+_.sublime-workspace
+_.sublime-project
+
+# Archivos de configuración de sistema
+
+.DS_Store # Para macOS
+Thumbs.db # Para Windows
+
+# Ignorar bases de datos locales o archivos sensibles
+
+_.sqlite3
+_.db
+\*.log
