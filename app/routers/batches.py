@@ -1,7 +1,9 @@
 from fastapi import APIRouter
+from app import fake_data
 
-router = APIRouter(prefix="/batches", tags=["Batches"])
+router = APIRouter(prefix="/batches", tags=["Batches"]) 
 
-@router.get("")
-async def get_batches():
-    return "batches"
+@router.get("/")
+def get_users():
+    
+    return fake_data["batches"]

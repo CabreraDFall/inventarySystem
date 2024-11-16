@@ -8,6 +8,7 @@ app = FastAPI(
         openapi_tags=[
             {"name": "Home", "description": "Las rutas principales del sistema"},
             {"name": "Users", "description": "Usuarios"},
+            {"name": "Batches", "description": "Usuarios"},
             {"name": "Categories", "description": "Lotes"},
             {"name": "Products", "description": "Lotes"},
             {"name": "Stock history", "description": "Lotes"},
@@ -19,6 +20,7 @@ app = FastAPI(
 # Incluir el router
 app.include_router(users_router)
 app.include_router(products_router)
+app.include_router(batches_router)
 app.include_router(categories_router)
 app.include_router(stock_history_router)
 app.include_router(suppliers_router)
