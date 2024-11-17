@@ -1,6 +1,7 @@
 from pydantic import BaseModel, EmailStr, Field
 from typing import Optional
 
+
 class UserBase(BaseModel):
     username: str = Field(..., description="Nombre de usuario único para el sistema", min_length=3, max_length=50)
     email: EmailStr = Field(..., description="Correo electrónico válido del usuario")

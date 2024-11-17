@@ -1,10 +1,11 @@
 # main.py
 from fastapi import FastAPI
-from app.routers import users_router,products_router, batches_router,categories_router, stock_history_router, suppliers_router, transaction_details_router, transactions_router
+from app import users_router,products_router, batches_router,categories_router, stock_history_router, suppliers_router, transaction_details_router, transactions_router
   # Importamos el router de items
 
 app = FastAPI(
         title="Invetory system", 
+        swagger_ui_parameters={"docExpansion": "none"},
         openapi_tags=[
             {"name": "Home", "description": "Las rutas principales del sistema"},
             {"name": "Users", "description": "Usuarios"},
