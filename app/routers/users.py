@@ -1,4 +1,4 @@
-# items.py
+# user.py
 from fastapi import APIRouter, HTTPException
 from app import fake_data
 from ..schema.user import User, UserCreate

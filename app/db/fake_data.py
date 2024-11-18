@@ -112,14 +112,16 @@ fake_data ={
   ],
   "transactions": [
     {
-      "transaction_type": "compra",
-      "total_amount": 2199.95,
-      "transaction_date": "2024-11-16T10:00:00"
+        "transaction_type": "compra",
+        "total_amount": 2199.95,
+        "transaction_date": "2024-11-16T10:00:00",
+        "transaction_details": []
     },
     {
-      "transaction_type": "venta",
-      "total_amount": 1800.0,
-      "transaction_date": "2024-11-15T14:30:00"
+        "transaction_type": "venta",
+        "total_amount": 1800.0,
+        "transaction_date": "2024-11-15T14:30:00",
+        "transaction_details": []
     }
   ],
   "batches": [
